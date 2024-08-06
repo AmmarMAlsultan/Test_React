@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 export default function navbar() {
     return (
         <div className="topnav">
-            <a className="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <NavLink to="home">Home</NavLink>
+            <NavLink to="news">News</NavLink>
+            <NavLink to="contact">Contact</NavLink>
+            <NavLink to="about">About</NavLink>
+            <NavLink to="form">Form</NavLink>
+            <NavLink to="api">Data Api</NavLink>
         </div>
     );
 }
